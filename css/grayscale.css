@@ -20,7 +20,7 @@ h5,
 h6 {
   font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 700;
-  margin: 0 0 35px;
+  margin: 30px 0 10px;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
@@ -280,4 +280,9 @@ img::selection {
 
 img::-moz-selection {
   background: transparent;
+}
+
+.portfolioImage{
+  width: 300px;
+  height: 300px;
 }
