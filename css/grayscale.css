@@ -18,9 +18,9 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Poiret One', cursive;
   font-weight: 700;
-  margin: 0 0 35px;
+  margin: 30px 0 10px;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
@@ -68,6 +68,7 @@ a:focus, a:hover {
 
 #mainNav .navbar-brand {
   font-weight: 700;
+  font-family: 'Megrim', cursive;
 }
 
 #mainNav a {
@@ -113,7 +114,11 @@ a:focus, a:hover {
     background-color: rgba(255, 255, 255, 0.3);
   }
   #mainNav .nav-link.active:hover {
-    color: white;
+    color: #42DCA3;
+  }
+
+  #mainNav .nav-link:hover {
+    color: #42DCA3;
   }
 }
 
@@ -280,4 +285,9 @@ img::selection {
 
 img::-moz-selection {
   background: transparent;
+}
+
+.portfolioImage{
+  width: 300px;
+  height: 300px;
 }
