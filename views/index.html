@@ -11,14 +11,14 @@
     <title>HT&T Technologies</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../public/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Megrim|Poiret+One|Nanum+Gothic" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="css/grayscale.min.css" rel="stylesheet">
-    <link href="css/grayscale.css" rel="stylesheet">
+    <link href="../public/css/grayscale.min.css" rel="stylesheet">
+    <link href="../public/css/grayscale.css" rel="stylesheet">
 
 </head>
 
@@ -87,32 +87,32 @@
 
                 <div class="col-lg-4 mx-auto">
                     <h2>People Database</h2>
-                    <a href="https://tjbase.herokuapp.com" target="_blank"><img class="portfolioImage" src="img/tjbase.png" alt="People Database"></a>
+                    <a href="https://tjbase.herokuapp.com" target="_blank"><img class="portfolioImage" src="../public/img/tjbase.png" alt="People Database"></a>
                 </div>
 
                 <div class="col-lg-4 mx-auto">
                     <h2>A-T Computers</h2>
-                    <a href="https://bit.ly/attechnologies" target="_blank"><img class="portfolioImage" src="img/attech.PNG" alt="AT Technologies"></a>
+                    <a href="https://bit.ly/attechnologies" target="_blank"><img class="portfolioImage" src="../public/img/attech.PNG" alt="AT Technologies"></a>
                 </div>
 
                 <div class="col-lg-4 mx-auto">
                     <h2>GeoTrend News</h2>
-                    <a href="https://bit.ly/gtnewsapp" target="_blank"><img class="portfolioImage" src="img/gt.png" alt="Geo Trending News"></a>
+                    <a href="https://bit.ly/gtnewsapp" target="_blank"><img class="portfolioImage" src="../public/img/gt.png" alt="Geo Trending News"></a>
                 </div>
 
                 <div class="col-lg-4 mx-auto">
                     <h2>BooGle</h2>
-                    <a href="https://bit.ly/boogleapp" target="_blank"><img class="portfolioImage" src="img/boogle.png" alt="BooGle App"></a>
+                    <a href="https://bit.ly/boogleapp" target="_blank"><img class="portfolioImage" src="../public/img/boogle.png" alt="BooGle App"></a>
                 </div>
 
                 <div class="col-lg-4 mx-auto">
                     <h2>Jiffy</h2>
-                    <a href="https://bit.ly/getjiffy" target="_blank"><img class="portfolioImage" src="img/jiffy.png" alt="Get Jiffy"></a>
+                    <a href="https://bit.ly/getjiffy" target="_blank"><img class="portfolioImage" src="../public/img/jiffy.png" alt="Get Jiffy"></a>
                 </div>
 
                 <div class="col-lg-4 mx-auto">
                     <h2>Res.Create</h2>
-                    <a href="https://res-create.herokuapp.com" target="_blank"><img class="portfolioImage" src="img/res.png" alt="res.Create"></a>
+                    <a href="https://res-create.herokuapp.com" target="_blank"><img class="portfolioImage" src="../public/img/res.png" alt="res.Create"></a>
                 </div>
             </div>
 
@@ -126,35 +126,52 @@
                 <div class="col-lg-8 mx-auto">
                     <h2>Contact HT&T Technologies</h2>
                     <p>Feel free to leave us a comment. </p>
+                    <p id="sentConfirmation"></p>
                     <div class="row">
 
                     <div class="col-lg-8 mx-auto">
-                        <form class="needs-validation" novalidate>
+                        <form method="POST" class="needs-validation" novalidate>
                             <!-- <div class="row"> -->
                               <div class="mb-3">
                                 <!-- <label for="validationCustom01">Name</label> -->
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Name" required>
+                                <input type="text" class="form-control" name="name" placeholder="Name" required>
                                 <div class="valid-feedback">
                                   Looks good!
                                 </div>
                               </div>
                               <!-- </div> -->
 
+                              <div class="mb-3">
+                                <!-- <label for="validationCustom02">Email</label> -->
+                                <input type="text" class="form-control" name="company" placeholder="Company" required>
+                                <div class="valid-feedback">
+                                  Looks good!
+                                </div>
+                            </div>
+
                               <!-- <div class="row"> -->
                               <div class="mb-3">
                                 <!-- <label for="validationCustom02">Email</label> -->
-                                <input type="text" class="form-control" id="validationCustom02" placeholder="Email" required>
+                                <input type="text" class="form-control" name="email" placeholder="Email" required>
                                 <div class="valid-feedback">
                                   Looks good!
                                 </div>
                             </div>
                             <!-- </div> -->
 
+                            <div class="mb-3">
+                                <!-- <label for="validationCustom02">Email</label> -->
+                                <input type="text" class="form-control" name="phone" placeholder="Phone Number" required>
+                                <div class="valid-feedback">
+                                  Looks good!
+                                </div>
+                            </div>
+
                             <!-- <div class="row"> -->
                                 <div class="mb-3">
                                     <div class="form-group">
                                         <!-- <label for="form_message">Message<i class="star">*</i></label> -->
-                                        <textarea id="contact_message" name="message" class="form-control" placeholder="Your Message here" rows="8" required="required" data-error="Please,leave us a message."></textarea>
+                                        <textarea name="message" class="form-control" placeholder="Your Message here" rows="8" required="required" data-error="Please,leave us a message."></textarea>
                                         <div class="help-block with-errors"></div>
                                     </div>
 
@@ -213,17 +230,17 @@
     </footer>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../public/vendor/jquery/jquery.min.js"></script>
+    <script src="../public/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="../public/vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBb6g0T0iAgD3Q_1vsppg4dhzoO9I9j0Ys"></script>
 
     <!-- Custom scripts for this template -->
-    <script src="js/grayscale.min.js"></script>
+    <script src="../public/js/grayscale.min.js"></script>
 
 </body>
 
