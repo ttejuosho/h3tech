@@ -22,6 +22,7 @@ app.get('/', (req, res) => {
 });
 
 app.post('/', (req, res) => {
+  event.preventDefault();
   const output = `
     <p>You have a new message from your website</p>
     <h3>Contact Details</h3>
