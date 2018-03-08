@@ -2,9 +2,9 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
 const nodemailer = require('nodemailer');
-var PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000;
 const app = express();
-
+const keys = require("keys.js");
 
 // Static folder
 app.use('/public', express.static(path.join(__dirname, 'public')));
@@ -38,8 +38,8 @@ app.post('/', (req, res) => {
     port: 587,
     secure: false, // true for 465, false for other ports
     auth: {
-        user: 'ttejuosho@aol.com', // generated ethereal user
-        pass: 'kpmgwgci1A'  // generated ethereal password
+        user: emailAuth.username, // generated ethereal user
+        pass: emailAuth.password  // generated ethereal password
     }
   });
 
