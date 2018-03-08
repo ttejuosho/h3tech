@@ -130,41 +130,37 @@
                     <div class="row">
 
                     <div class="col-lg-8 mx-auto">
-                        <form method="POST" class="needs-validation" novalidate>
+                        <form method="POST">
+
+                                <div class="messages"></div>
                             <!-- <div class="row"> -->
+                                    <div class="controls">
+
                               <div class="mb-3">
                                 <!-- <label for="validationCustom01">Name</label> -->
-                                <input type="text" class="form-control" name="name" placeholder="Name" required>
-                                <div class="valid-feedback">
-                                  Looks good!
-                                </div>
+                                <input type="text" class="form-control" name="name" placeholder="Name" required="required" data-error="Name is required.">
+                                <div class="help-block with-errors"></div>
                               </div>
                               <!-- </div> -->
 
                               <div class="mb-3">
-                                <!-- <label for="validationCustom02">Email</label> -->
-                                <input type="text" class="form-control" name="company" placeholder="Company" required>
-                                <div class="valid-feedback">
-                                  Looks good!
-                                </div>
+                                <!-- <label for="validationCustom02">Company</label> -->
+                                <input type="text" class="form-control" name="company" placeholder="Company" required="required" data-error="Company is required.">
+                                <div class="help-block with-errors"></div>
                             </div>
 
                               <!-- <div class="row"> -->
                               <div class="mb-3">
-                                <!-- <label for="validationCustom02">Email</label> -->
-                                <input type="text" class="form-control" name="email" placeholder="Email" required>
-                                <div class="valid-feedback">
-                                  Looks good!
-                                </div>
+                                <!-- <label for="validationCustom03">Email</label> -->
+                                <input type="text" class="form-control" name="email" placeholder="Email" required="required" data-error="Email is required.">
+                                <div class="help-block with-errors"></div>
                             </div>
                             <!-- </div> -->
 
                             <div class="mb-3">
-                                <!-- <label for="validationCustom02">Email</label> -->
-                                <input type="text" class="form-control" name="phone" placeholder="Phone Number" required>
-                                <div class="valid-feedback">
-                                  Looks good!
-                                </div>
+                                <!-- <label for="validationCustom04">Phone Number</label> -->
+                                <input type="text" class="form-control" name="phone" placeholder="Phone Number" required="required" data-error="Phone Number is required.">
+                                <div class="help-block with-errors"></div>
                             </div>
 
                             <!-- <div class="row"> -->
@@ -178,7 +174,7 @@
                                     <button class="btn sendmsg" type="submit">Send Message</button>
                                 </div>
                                
-                              <!-- </div> -->
+                              </div>
 
                                 
                               <!-- </div> -->
@@ -241,6 +237,7 @@
 
     <!-- Custom scripts for this template -->
     <script src="../public/js/grayscale.min.js"></script>
+
 
 </body>
 

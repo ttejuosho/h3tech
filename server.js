@@ -2,9 +2,8 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
 const nodemailer = require('nodemailer');
-const PORT = process.env.PORT || 3000;
 const app = express();
-const keys = require("keys.js");
+const PORT = process.env.PORT || 3000;
 
 // Static folder
 app.use('/public', express.static(path.join(__dirname, 'public')));
@@ -18,9 +17,7 @@ app.get('/', (req, res) => {
 });
 
 app.post('/', (req, res) => {
-  event.preventDefault();
   const output = `
-    <p>You have a new message from your website</p>
     <h3>Contact Details</h3>
     <ul>  
       <li>Name: ${req.body.name}</li>
@@ -38,16 +35,17 @@ app.post('/', (req, res) => {
     port: 587,
     secure: false, // true for 465, false for other ports
     auth: {
-        user: emailAuth.username, // generated ethereal user
-        pass: emailAuth.password  // generated ethereal password
+        user: "ttejuosho@aol.com", // generated ethereal user
+        pass: "kpmgwgci1A"  // generated ethereal password
     }
   });
 
+  
   // setup email data with unicode symbols
   let mailOptions = {
-      from: '"Taiwo Tejuosho" <ttejuosho@aol.com>', // sender address
+      from: '"Web Email" <ttejuosho@aol.com>', // sender address
       to: "ttejuosho@aol.com", // list of receivers
-      subject: 'Tee-Mail', // Subject line
+      subject: "New Email Message From Your Website", // Subject line
       text: 'Hello world?', // plain text body
       html: output // html body
   };
