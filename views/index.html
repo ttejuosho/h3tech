@@ -129,68 +129,64 @@
                     <p id="sentConfirmation"></p>
                     <div class="row">
 
-                    <div class="col-lg-8 mx-auto">
-                        <form method="POST" class="needs-validation" novalidate>
-                            <!-- <div class="row"> -->
-                              <div class="mb-3">
-                                <!-- <label for="validationCustom01">Name</label> -->
-                                <input type="text" class="form-control" name="name" placeholder="Name" required>
-                                <div class="valid-feedback">
-                                  Looks good!
-                                </div>
-                              </div>
-                              <!-- </div> -->
+                        <div class="col-lg-8 mx-auto">
+                            <form method="POST">
 
-                              <div class="mb-3">
-                                <!-- <label for="validationCustom02">Email</label> -->
-                                <input type="text" class="form-control" name="company" placeholder="Company" required>
-                                <div class="valid-feedback">
-                                  Looks good!
-                                </div>
-                            </div>
+                                <div class="messages"></div>
+                                <!-- <div class="row"> -->
+                                <div class="controls">
 
-                              <!-- <div class="row"> -->
-                              <div class="mb-3">
-                                <!-- <label for="validationCustom02">Email</label> -->
-                                <input type="text" class="form-control" name="email" placeholder="Email" required>
-                                <div class="valid-feedback">
-                                  Looks good!
-                                </div>
-                            </div>
-                            <!-- </div> -->
+                                    <div class="mb-3">
+                                        <!-- <label for="validationCustom01">Name</label> -->
+                                        <input type="text" class="form-control" name="name" placeholder="Name" required="required" data-error="Name is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <!-- </div> -->
 
-                            <div class="mb-3">
-                                <!-- <label for="validationCustom02">Email</label> -->
-                                <input type="text" class="form-control" name="phone" placeholder="Phone Number" required>
-                                <div class="valid-feedback">
-                                  Looks good!
-                                </div>
-                            </div>
-
-                            <!-- <div class="row"> -->
-                                <div class="mb-3">
-                                    <div class="form-group">
-                                        <!-- <label for="form_message">Message<i class="star">*</i></label> -->
-                                        <textarea name="message" class="form-control" placeholder="Your Message here" rows="8" required="required" data-error="Please,leave us a message."></textarea>
+                                    <div class="mb-3">
+                                        <!-- <label for="validationCustom02">Company</label> -->
+                                        <input type="text" class="form-control" name="company" placeholder="Company" required="required" data-error="Company is required.">
                                         <div class="help-block with-errors"></div>
                                     </div>
 
-                                    <button class="btn sendmsg" type="submit">Send Message</button>
+                                    <!-- <div class="row"> -->
+                                    <div class="mb-3">
+                                        <!-- <label for="validationCustom03">Email</label> -->
+                                        <input type="text" class="form-control" name="email" placeholder="Email" required="required" data-error="Email is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <!-- </div> -->
+
+                                    <div class="mb-3">
+                                        <!-- <label for="validationCustom04">Phone Number</label> -->
+                                        <input type="text" class="form-control" name="phone" placeholder="Phone Number" required="required" data-error="Phone Number is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+
+                                    <!-- <div class="row"> -->
+                                    <div class="mb-3">
+                                        <div class="form-group">
+                                            <!-- <label for="form_message">Message<i class="star">*</i></label> -->
+                                            <textarea name="message" class="form-control" placeholder="Your Message here" rows="8" required="required" data-error="Please,leave us a message."></textarea>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+
+                                        <button class="btn sendmsg" type="submit">Send Message</button>
+                                    </div>
+
                                 </div>
-                               
-                              <!-- </div> -->
 
-                                
-                              <!-- </div> -->
-                              
+
+                                <!-- </div> -->
+
                             </form>
+                        </div>
+
+
+
+
+
                     </div>
-
-                   
-
-                
-
-                </div>
                 </div>
             </div>
         </div>
@@ -202,29 +198,29 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-           
+
             <div class="col mx-auto text-center">
-            <ul class="list-inline banner-social-buttons">
-                <li class="list-inline-item">
-                    <a href="https://www.linkedin.com/in/ttejuosho" class="btn btn-default btn-lg">
+                <ul class="list-inline banner-social-buttons">
+                    <li class="list-inline-item">
+                        <a href="https://www.linkedin.com/in/ttejuosho" class="btn btn-default btn-lg">
           <i class="fab fa-linkedin"></i>
           <span class="network-name">Linkedin</span>
         </a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="mailto:ttejuosho@aol.com" class="btn btn-default btn-lg">
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="mailto:ttejuosho@aol.com" class="btn btn-default btn-lg">
           <i class="far fa-envelope"></i>
           <span class="network-name">Email</span>
         </a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="https://www.github.com/ttejuosho" class="btn btn-default btn-lg">
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://www.github.com/ttejuosho" class="btn btn-default btn-lg">
           <i class="fab fa-github"></i>
           <span class="network-name">Github</span>
         </a>
-                </li>
-            </ul>
-</div>
+                    </li>
+                </ul>
+            </div>
             <p>Copyright &copy; 2018 Taiwo Tejuosho</p>
         </div>
     </footer>
@@ -241,6 +237,7 @@
 
     <!-- Custom scripts for this template -->
     <script src="../public/js/grayscale.min.js"></script>
+
 
 </body>
 
