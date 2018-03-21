@@ -183,6 +183,10 @@ a:focus, a:hover {
   color: #42DCA3;
 }
 
+.modal-text{
+  color: black;
+}
+
 .btn-circle:focus, .btn-circle:hover {
   color: white;
   outline: none;
