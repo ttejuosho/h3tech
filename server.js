@@ -39,6 +39,9 @@ app.post('/', (req, res) => {
         auth: {
             user: "ttejuosho@aol.com", // generated ethereal user
             pass: "kpmgwgci1A" // generated ethereal password
+        },
+        tls: {
+          rejectUnauthorized: false
         }
     });
 
@@ -59,7 +62,6 @@ app.post('/', (req, res) => {
         }
         console.log('Message sent: %s', info.messageId);
         console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
-
 
         res.sendFile(path.join(__dirname, 'views/index.html'));
     });
