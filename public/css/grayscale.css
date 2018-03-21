@@ -178,6 +178,10 @@ a:focus, a:hover {
   background: transparent;
 }
 
+.keyword{
+  color: #42DCA3;
+}
+
 .btn-circle:focus, .btn-circle:hover {
   color: white;
   outline: none;
