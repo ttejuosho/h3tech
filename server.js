@@ -15,7 +15,7 @@ app.use(bodyParser.urlencoded({
 app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'views/index.html'));
+    res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 app.post('/', (req, res) => {
@@ -63,7 +63,7 @@ app.post('/', (req, res) => {
         console.log('Message sent: %s', info.messageId);
         console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
 
-        setTimeout(res.sendFile(path.join(__dirname, 'views/index.html')), 9000);
+        setTimeout(function(){ res.sendFile(path.join(__dirname, 'index.html'))}, 3000);
     });
 });
 
