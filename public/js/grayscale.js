@@ -1,6 +1,6 @@
 (function($) {
   "use strict"; // Start of use strict
-
+  
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -41,6 +41,9 @@
 
 })(jQuery); // End of use strict
 
+
+
+
 // Google Maps Scripts
 var map = null;
 // When the window has finished loading create our google map below
@@ -52,6 +55,7 @@ google.maps.event.addDomListener(window, 'resize', function() {
 function init() {
   // Basic options for a simple Google Map
   // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+  console.log("read ssdy");
   var mapOptions = {
     // How zoomed in you want the map to start at (always required)
     zoom: 15,
