@@ -130,7 +130,7 @@ a:focus, a:hover {
   padding: 200px 0;
   text-align: center;
   color: white;
-  background: url("../img/intro-bg.jpg") no-repeat bottom center scroll;
+  background: url("../img/introbg1.jpg") no-repeat bottom center scroll;
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -193,6 +193,9 @@ a:focus, a:hover {
   background: rgba(255, 255, 255, 0.1);
 }
 
+#contact {
+  background: url("../img/contactbg0.jpg") no-repeat center center scroll;
+}
 .content-section {
   padding-top: 150px;
   padding-bottom: 150px;
@@ -200,7 +203,7 @@ a:focus, a:hover {
 
 .download-section {
   color: white;
-  background: url("../img/downloads-bg.jpg") no-repeat center center scroll;
+  background: url("../img/dlbg0.jpg") no-repeat center center scroll;
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
