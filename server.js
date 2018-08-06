@@ -58,10 +58,17 @@ app.post('/', (req, res) => {
     // send mail with defined transport object
     transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
-            return console.log(error);
+            return console.log("error : " + JSON.stringify(error));
         }
-        console.log('Message sent: %s', info.messageId);
-        console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
+        console.log('Message ID: %s', info.messageId);
+        // console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
+        // console.log("info : " + JSON.stringify(info));
+        console.log("From : " + info.envelope.from);
+        console.log("To : " + info.envelope.to);
+        console.log("Accepted : " + info.accepted);
+        console.log("Response : " + info.response);
+        console.log("Message Time : " + info.messageTime);
+        console.log("Message Size : " + info.messageSize);
 
         setTimeout(function(){ res.sendFile(path.join(__dirname, 'index.html'))}, 3000);
     });
