@@ -4,9 +4,9 @@
   "description": "Web Dev Company Website",
   "main": "server.js",
   "dependencies": {
-    "body-parser": "^1.18.2",
+    "body-parser": "^1.18.3",
     "express": "^4.16.3",
-    "nodemailer": "^4.6.3",
+    "nodemailer": "^4.6.7",
     "path": "^0.12.7"
   },
   "devDependencies": {},
