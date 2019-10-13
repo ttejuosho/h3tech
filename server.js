@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
@@ -38,7 +39,7 @@ app.post('/', (req, res) => {
         secure: false, // true for 465, false for other ports
         auth: {
             user: "ttejuosho@aol.com", // user
-            pass: "kpmgwgci1A" // password
+            pass: process.env.EMAIL_PASSWORD // password
         },
         tls: {
             rejectUnauthorized: false
